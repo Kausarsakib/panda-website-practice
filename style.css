@@ -9,38 +9,49 @@ html{
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #fff;
+    line-height: 1.5;
 }
-/* navbar styles */
+/* shared styles */
 .container{
-    /* max-width: 1300px; */
-    margin: 50px 158px 0 158px;
+    margin-bottom: 100px;
+    max-width: 1700px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* navbar styles */
+/* .container{
+    
+
+
+
     padding: 20px 35px;
+     */
+.navbar{
+    /* background-color: transparent; */
+    /* top: 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f8f9fa;
     border-radius: 10px;
     margin-top: 20px;
-}
-.navbar{
-    background-color: transparent;
-    /* position: sticky; */
-    top: 0;
-    /* z-index: 1000; */
+    padding: 20px 35px;
 }
 .logo img{
-    height: 32px;
+    height: 25px;
 }
 .search{
-    padding: 20px 15px;
+    padding: 10px 15px;
     border-radius: 30px;
     border: 1px solid #ccc;
-    font-size: 20px;
-    width: 650px;
+    font-size: 16px;
+    width: 300px;
     outline: none;
-    /* margin: 0 20px; */
     background-color: rgba(255, 105, 180, 0.214);
-    /* color: white; */
 }
 .search::placeholder{
     color: black;
@@ -49,7 +60,7 @@ body{
 .nav-links{
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 20px;
     cursor: pointer;
 }
 .nav-links a{
@@ -65,7 +76,7 @@ body{
 .hero{
     background-color: #FEEAE9;
     padding: 50px 0;
-    margin:65px 120px;
+    /* margin:65px 120px; */
     border-radius: 30px;
 }
 .hero-box{
@@ -73,9 +84,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 1800px; */
-    width: 90%;
-    margin: 0 auto;
     gap: 140px;
 }
 .hero-text h1{
@@ -83,7 +91,6 @@ body{
     font-weight: bold;
 }
 .hero-text p{
-    /* line-height: 20px; */
     font-size: 18px;
     color: #4E4E4E;
     margin-top: 30px;
@@ -104,4 +111,56 @@ body{
     width: 168px;
     height: 55px;
     font-size: 18px;
+}
+/* categories-section styles */
+.categories{
+     padding: 50px 0;
+     background-color: #fff;
+     text-align: center;
+     /* margin: 0 156px; */
+}
+.section-title{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    width: 359px;
+    height: 120px;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.cat-item:hover{
+    transform: scale(1.05);
+}
+.cat-item h3{
+    font-size: 36px;
+    margin: 0;
+}
+.cat-item img{
+    width: 68px;
+    height: 90px;
+}
+.cat-watch{
+    background-color: rgba(255, 156, 53, 1.00);
+}
+.cat-bag{
+    background-color: rgba(255, 88, 155, 1.00);
+}
+.cat-shoes{
+    background-color: rgba(66, 137, 255, 1.00);
 }
