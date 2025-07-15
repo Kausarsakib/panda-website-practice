@@ -13,7 +13,7 @@ body{
 }
 /* shared styles */
 .container{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     max-width: 1700px;
     width: 100%;
     padding-right: 15px;
@@ -37,16 +37,16 @@ body{
     height: 25px;
 }
 .search{
-    padding: 10px 15px;
-    border-radius: 30px;
+    padding: 20px 30px;
+    border-radius: 25px;
     border: 1px solid #ccc;
-    font-size: 16px;
-    width: 300px;
+    font-size: 20px;
+    width: 900px;
     outline: none;
     background-color: rgba(255, 105, 180, 0.214);
 }
 .search::placeholder{
-    color: black;
+    color: rgba(0, 0, 0, 0.577);
     opacity: 1;
 }
 .nav-links{
